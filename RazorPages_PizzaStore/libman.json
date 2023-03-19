@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootswatch@5.2.3",
+      "destination": "wwwroot/bootswatch/",
+      "files": [
+        "cerulean/bootstrap.min.css",
+        "sketchy/bootstrap.css",
+        "sketchy/bootstrap.min.css"
+      ]
+    }
+  ]
+}
