@@ -1,0 +1,47 @@
+﻿@page
+@model RazorPages_PizzaStore.Pages.Forms.CustomPizzaModel
+@{
+    ViewData["Title"] = "Custom Pizza!!!";
+}
+<h1>Custom Pizza </h1>
+
+
+<div class="container">
+    <div class="col-6 offset-3">
+
+        <h1>Create Your Own Pizza!</h1>
+        <form method="post" class="">
+            <div class="my-2">
+                <input asp-for="Pizza.Name" placeholder="give your pizza a name" />
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Sauce" /> Sauce
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Cheese" /> Cheese
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Peperoni" /> Peperoni
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Mushroom" /> Mushroom
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Tuna" /> Tuna
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Pineapple" /> Pineapple
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Ham" /> Ham
+            </div>
+            <div class="my-2">
+                <input asp-for="Pizza.Beef" /> Beef
+            </div>
+            <div class="my-2">
+                <button class="btn btn-primary mt-2" type="submit">Order My Pizza</button>
+            </div>
+        </form>
+    </div>
+</div>
+

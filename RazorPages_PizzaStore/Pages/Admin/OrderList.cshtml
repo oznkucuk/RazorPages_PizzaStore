@@ -1,0 +1,41 @@
+﻿@page
+@model RazorPages_PizzaStore.Pages.Admin.OrdersListModel
+@{
+    ViewData["Title"] = "OrdersList";
+}
+
+<h1>OrdersList</h1>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PizzaOrder[0].Date)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.PizzaOrder)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Price
+                </td>
+                <td>
+                    @item.Date.ToString("D") @item.Date.Hour:@item.Date.Minute:@item.Date.Second
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
